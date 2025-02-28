@@ -9,25 +9,159 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body class="bg-slate-400 px-[140px] pt-[24px]">
-    <header class="flex justify-between bg-white">
-        <div class="flex  items-center">
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: "Poppins", sans-serif;
+        } 
+    </style>
+
+
+</head> 
+<body class="bg-[#99afeb] px-[140px] py-[24px]">
+    <header class="flex justify-between bg-[#FFFFFF] p-[24px] rounded-[16px]">
+        <div class="flex  items-center gap-x-[7px]">
             <img src="assets/logo.png" alt="">
-            <h1>Dev<span class="font-bold">Board</span></h1>
+            <h1 class="text-[35px]">Dev<span class="font-bold">Board</span></h1>
         </div>
-        <div class="flex  justify-center gap-x-[38px]">
-            <div class="flex items-center">
-                <img src="assets/checkbox.png" alt="">
-                <h1>23</h1>
+        <div class="flex  justify-center gap-x-[38px] items-center">
+            <div class="flex items-center gap-x-[10px] bg-[#F4F7FF] px-[18px] py-[16px] rounded-[32px]">
+                <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
+                <h1 class="text-[32px] font-bold">23</h1>
             </div>
-            <img src="assets/theme-btn.png" alt="">
+            <img class=" bg-[#F4F7FF] p-[12px] rounded-[32px]" src="assets/theme-btn.png" alt="">
         </div>
     </header>
 
-    <main>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, repellat aliquid molestiae quia iure optio esse, ab beatae dolorum sint, veritatis cum est totam distinctio sapiente expedita. Est, earum nam.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio perferendis voluptatem aperiam, quasi sit dolore iusto possimus sint dolores explicabo vero ducimus repudiandae doloremque itaque iure quibusdam provident porro non?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut repudiandae veniam repellendus numquam inventore obcaecati blanditiis. Placeat laudantium ad nobis voluptatum qui ipsa eius reprehenderit asperiores facilis, quis magnam inventore.lore
+    <main class="flex pt-[20px] gap-x-[24px] justify-between">
+        <!-- Right section main -->
+        <section class="bg-[#FFFFFF] p-[24px] rounded-[16px] flex flex-col gap-y-[64px]">
+    
+            <!-- header of main-->
+            <div class="flex gap-x-[24px] justify-between">
+                <!-- tast assign -->
+                    <div class="flex items-center gap-x-[20px] bg-[#F4F7FF] p-[20px] rounded-[12px]">
+                        <!-- chack box -->
+                    <div class="bg-[#FFFFFF] p-[18px] rounded-[50px]"><img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt=""></div>
+                        <!-- text -->
+                        <div> 
+                            <h1>Task Assigned</h1>
+                            <h1 class="text-[32px] font-bold">05</h1>
+                        </div>
+                    </div>
+                    <!-- Discover -->
+                    <div class="flex items-center gap-x-[22px] bg-gradient-to-r from-[#3752FD] to-[#6C7FFA] px-[40px] py-[22px] rounded-[12px]">
+                        <!-- img -->
+                        <img src="assets/board.png" alt="">
+                        <!-- text -->
+                        <h1 class="text-white">Discover Something <br> New Today!</h1>
+                    </div>
+                    <!-- Date and day -->
+                    <div class="flex gap-x-[6px] bg-[#F4F7FF] px-[23px] py-[30px] rounded-[12px] ">
+                        <!-- img -->
+                        <div class="p-[18px] bg-[#FFFFFF] rounded-[50px] justify-center items-center"><img class="" src="assets/calender.png" alt=""></div>
+                        <!-- text -->
+                        <h1 class="text-[22px]">Wed,<br><span class="font-bold">Jul 28 2025</span></h1>
+                    </div>
+            </div>
+            
+            <!-- item Selecion body -->
+            <div class="grid  grid-cols-3 gap-[24px]">
+                <!-- selection-1 -->
+                <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
+                <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
+                <h2 class="text-[24px] font-medium">Fix Mobile button Issue</h2>
+                <h3 class="bg-white p-[16px] rounded-[8px] text-[16px] ">Debug using chrome DevTools, chack for overlapping</h3>
+                <!-- deadline -->
+                    <div class="flex items-center mt-[12px] gap-x-[48px]">
+                        <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
+                        <!-- btn -->
+                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                    </div>
+                </div>
+                <!-- selection-2 -->
+                <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
+                <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
+                <h2 class="text-[24px] font-medium">Fix Mobile button Issue</h2>
+                <h3 class="bg-white p-[16px] rounded-[8px] text-[16px">Debug using chrome DevTools, chack for overlapping</h3>
+                <!-- deadline -->
+                    <div class="flex items-center mt-[12px] gap-x-[48px]">
+                        <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
+                        <!-- btn -->
+                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                    </div>
+                </div>
+                <!-- selection-3 -->
+                <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
+                <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
+                <h2 class="text-[24px] font-medium">Fix Mobile button Issue</h2>
+                <h3 class="bg-white p-[16px] rounded-[8px] text-[16px] ">Debug using chrome DevTools, chack for overlapping</h3>
+                <!-- deadline -->
+                    <div class="flex items-center mt-[12px] gap-x-[48px]">
+                        <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
+                        <!-- btn -->
+                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                    </div>
+                </div>
+                <!-- selection-4 -->
+                <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
+                <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
+                <h2 class="text-[24px] font-medium">Fix Mobile button Issue</h2>
+                <h3 class="bg-white p-[16px] rounded-[8px] text-[16px] ">Debug using chrome DevTools, chack for overlapping</h3>
+                <!-- deadline -->
+                    <div class="flex items-center mt-[12px] gap-x-[48px]">
+                        <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
+                        <!-- btn -->
+                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                    </div>
+                </div>
+                <!-- selection-5 -->
+                <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
+                <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
+                <h2 class="text-[24px] font-medium">Fix Mobile button Issue</h2>
+                <h3 class="bg-white p-[16px] rounded-[8px] text-[16px] ">Debug using chrome DevTools, chack for overlapping</h3>
+                <!-- deadline -->
+                    <div class="flex items-center mt-[12px] gap-x-[48px]">
+                        <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
+                        <!-- btn -->
+                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                    </div>
+                </div>
+                <!-- selection-6 -->
+                <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
+                <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
+                <h2 class="text-[24px] font-medium">Fix Mobile button Issue</h2>
+                <h3 class="bg-white p-[16px] rounded-[8px] text-[16px] ">Debug using chrome DevTools, chack for overlapping</h3>
+                <!-- deadline -->
+                    <div class="flex items-center mt-[12px] gap-x-[48px]">
+                        <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
+                        <!-- btn -->
+                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--left section Activity log -->
+        <section class="bg-[#FFFFFF] w-[350px] flex flex-col items-center px-[30px] py-[24px] rounded-[8px]">
+            <!-- Activity header -->
+            <div class="flex gap-x-[17px] items-center">
+                <img src="assets/activity.png" alt="">
+                <h1>Activity Log</h1>
+            </div>
+            <!-- btn -->
+            <button class="btn bg-[#3752FD] text-white font-medium mt-[15px] border-none px-[20px]">Clear History</button>
+            <!-- massage -->
+            <div class="flex flex-col gap-y-[28px] mt-[40px]">
+                <p class="bg-[#F4F7FF] p-[8px] rounded-[8px]">muyksitul islam</p>
+                <p class="bg-[#F4F7FF] p-[8px] rounded-[8px]">muksitul Islam</p>
+                <p class="bg-[#F4F7FF] p-[8px] rounded-[8px]">muksitul Islam</p>
+            </div>
+        </section>
     </main>
 </body>
 </html>
