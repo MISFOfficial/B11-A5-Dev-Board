@@ -31,7 +31,7 @@
         <div class="flex  justify-center gap-x-[38px] items-center">
             <div class="flex items-center gap-x-[10px] bg-[#F4F7FF] px-[18px] py-[16px] rounded-[32px]">
                 <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
-                <h1 class="text-[32px] font-bold">23</h1>
+                <h1 class="text-[32px] font-bold">0</h1>
             </div>
             <button class=" bg-[#F4F7FF] p-[12px] rounded-[32px]" ><img id="bg-color" src="assets/theme-btn.png" alt=""></button>
         </div>
@@ -50,7 +50,7 @@
                         <!-- text -->
                         <div> 
                             <h1>Task Assigned</h1>
-                            <h1 class="text-[32px] font-bold">05</h1>
+                            <h1 id="task" class="text-[32px] font-bold"></h1>
                         </div>
                     </div>
                     <!-- Discover -->
@@ -74,7 +74,7 @@
             </div>
             
             <!-- item Selecion body -->
-            <div class="grid  grid-cols-3 gap-[24px]">
+            <div id="selection" class="grid  grid-cols-3 gap-[24px]">
                 <!-- selection-1 -->
                 <div class="flex flex-col bg-[#F4F7FF] p-[24px] rounded-[16px] gap-y-[16px]">
                 <h1 class="text-[16px] bg-white px-[16px] py-[8px] w-[114px] rounded-[8px] font-normal ">ShopEase</h1>
@@ -85,7 +85,7 @@
                     <div class="flex items-center justify-between mt-[12px] gap-x-[48px]">
                         <h1 class="text-[14px ]">Deadlin<br><span class="font-bold">21 March 2025</span></h1>
                         <!-- btn -->
-                         <button class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
+                         <button id="btn-selection-1" class="bg-[#3752FD] text-white px-[20px] py-[10px] rounded-[8px] font-medium text-[16px]">Completed</button>
                     </div>
                 </div>
                 <!-- selection-2 -->
@@ -181,5 +181,7 @@
     <script src="script/bg.js"></script>
     <!-- time -->
     <script src="script/time.js"></script>
+
+    <script src="script/total_task.js"></script>
 </body>
 </html>
