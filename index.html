@@ -22,7 +22,7 @@
 
 
 </head> 
-<body class="bg-[#99afeb] px-[140px] py-[24px]">
+<body id="bgColor" class="bg-[#99afeb] px-[140px] py-[24px]">
     <header class="flex justify-between bg-[#FFFFFF] p-[24px] rounded-[16px]">
         <div class="flex  items-center gap-x-[7px]">
             <img src="assets/logo.png" alt="">
@@ -33,7 +33,7 @@
                 <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
                 <h1 class="text-[32px] font-bold">23</h1>
             </div>
-            <img class=" bg-[#F4F7FF] p-[12px] rounded-[32px]" src="assets/theme-btn.png" alt="">
+            <img id="bg-color" class=" bg-[#F4F7FF] p-[12px] rounded-[32px]" src="assets/theme-btn.png" alt="">
         </div>
     </header>
 
@@ -42,7 +42,7 @@
         <section class="bg-[#FFFFFF] p-[24px] rounded-[16px] flex flex-col gap-y-[64px]">
     
             <!-- header of main-->
-            <div class="flex gap-x-[24px] justify-between">
+            <div class="grid grid-cols-3 gap-x-[24px] justify-between">
                 <!-- tast assign -->
                     <div class="flex items-center gap-x-[20px] bg-[#F4F7FF] p-[20px] rounded-[12px]">
                         <!-- chack box -->
@@ -54,12 +54,12 @@
                         </div>
                     </div>
                     <!-- Discover -->
-                    <div id="discover" class="flex items-center gap-x-[22px] bg-gradient-to-r from-[#3752FD] to-[#6C7FFA] px-[40px] py-[22px] rounded-[12px]">
+                    <button id="discover" class="flex items-center gap-x-[22px] bg-gradient-to-r from-[#3752FD] to-[#6C7FFA] px-[40px] py-[22px] rounded-[12px]">
                         <!-- img -->
                         <img src="assets/board.png" alt="">
                         <!-- text -->
-                        <h1 class="text-white">Discover Something <br> New Today!</h1>
-                    </div>
+                        <h1 class="text-white text-start">Discover Something <br> New Today!</h1>
+                    </button>
                     <!-- Date and day -->
                     <div class="flex gap-x-[6px] bg-[#F4F7FF] px-[23px] py-[30px] rounded-[12px] ">
                         <!-- img -->
@@ -166,5 +166,7 @@
 
     <!-- Scriping added -->
      <script src="script/new.js"></script>
+     <!-- background color funtion -->
+      <script src="script/bg.js"></script>
 </body>
 </html>
