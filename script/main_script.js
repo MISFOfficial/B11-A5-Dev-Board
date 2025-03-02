@@ -4,7 +4,7 @@ let totalTasks = parseInt(assTask.innerText);
 
 function ifAllTaskComplete() {
     if (totalTasks === 0) {
-        alert("You have successfully completed all tasks!");
+        alert("Congrats!!! You have successfully completed all tasks");
     }
 }
 
@@ -17,15 +17,23 @@ function selection(buttonId, titleId) {
     const notify = document.getElementById('notification');
     const title = document.getElementById(titleId);
     const newTitle = title.innerText;
-    const notityElement = document.createElement('p');
+    const notifyElement = document.createElement('p');
 
+    // Creating the time
     const time = new Date();
-    const hours = time.getHours();
+    const hours = time.getHours() %12 || 12
     const minutes = time.getMinutes();
+    const second=time.getSeconds();
+    const ampm=hours<12 ? 'AM' : 'PM'
 
-    const word = 'jahin';
-    const result = word + " " + newTitle + " " + (`${hours}:${minutes}`);
+    // adding extra word with the replacement title in activiti log
+    const word1 = 'You have complete the task';
+    const word2='at'
+    const result = word1 + " " + newTitle + " " +word2+ " " +(`${hours}:${minutes.toString().padStart(2, '0')}:${second} ${ampm}`);
+    notifyElement.innerText = result;
+    notify.appendChild(notifyElement);
 
+    // adding the total completing task in top header
     const countTask = document.getElementById('total_task');
     const count = parseInt(countTask.innerText);
     const total = count + 1;
@@ -36,13 +44,8 @@ function selection(buttonId, titleId) {
     const assTotal = assTn - 1;
     assTask.textContent = assTotal;
 
-    notityElement.innerText = result;
-    notify.appendChild(notityElement);
+    totalTasks--
 
-    // Decrement the total task count
-    totalTasks--;
-
-    // Check if all tasks are completed
     ifAllTaskComplete();
 }
 
