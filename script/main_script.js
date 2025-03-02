@@ -14,10 +14,14 @@ function selection(buttonId, titleId) {
     document.getElementById(buttonId).disabled = true;
     document.getElementById(buttonId).style.backgroundColor = '#B1BCFF'; 
 
+        
     const notify = document.getElementById('notification');
     const title = document.getElementById(titleId);
     const newTitle = title.innerText;
+    
+    // creating new element or paragraph and addeding style using class 'comment' 
     const notifyElement = document.createElement('p');
+    notifyElement.classList.add('comment')
 
     // Creating the time
     const time = new Date();
@@ -30,6 +34,7 @@ function selection(buttonId, titleId) {
     const word1 = 'You have complete the task';
     const word2='at'
     const result = word1 + " " + newTitle + " " +word2+ " " +(`${hours}:${minutes.toString().padStart(2, '0')}:${second} ${ampm}`);
+    // replacing the title 
     notifyElement.innerText = result;
     notify.appendChild(notifyElement);
 
@@ -39,6 +44,7 @@ function selection(buttonId, titleId) {
     const total = count + 1;
     countTask.textContent = total;
 
+    // decrasing assing task from total assign task
     const assTask = document.getElementById('task');
     const assTn = parseInt(assTask.innerText);
     const assTotal = assTn - 1;
