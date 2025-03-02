@@ -28,7 +28,7 @@ function selection(buttonId, titleId) {
     const hours = time.getHours() %12 || 12
     const minutes = time.getMinutes();
     const second=time.getSeconds();
-    const ampm=hours<12 ? 'AM' : 'PM'
+    const ampm=hours<12 ? 'PM' : 'AM'
 
     // adding extra word with the replacement title in activiti log
     const word1 = 'You have complete the task';
